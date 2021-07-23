@@ -69,6 +69,9 @@ class MainActivity : AppCompatActivity() {
         permisssionLauncher=registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()){
             permissions->
             Log.d(TAG,permissions.toString())
+            if (permissions[Manifest.permission.READ_EXTERNAL_STORAGE]==false){
+                Log.d(TAG,permissions.toString())
+            }
 
 
         }
