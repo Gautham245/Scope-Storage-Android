@@ -70,7 +70,10 @@ class MainActivity : AppCompatActivity() {
             permissions->
             Log.d(TAG,permissions.toString())
             if (permissions[Manifest.permission.READ_EXTERNAL_STORAGE]==false){
-                Log.d(TAG,permissions.toString())
+                Log.d(TAG,permissions.toString()+" Denied")
+            }
+            if (permissions[Manifest.permission.READ_EXTERNAL_STORAGE]==true){
+                Log.d(TAG,permissions.toString()+" Allowed")
             }
 
 

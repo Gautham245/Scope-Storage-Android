@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.scopestorageandroid.databinding.ItemPhotoBinding
 import com.example.scopestorageandroid.model.SharedStoragePhoto
-import com.example.scopestorageandroid.ui.ImageOnClick
 
 class ImageAdapter(val imageOnClick: (SharedStoragePhoto)-> Unit) : ListAdapter<SharedStoragePhoto, ImageAdapter.PhotoViewHolder>(Companion) {
 
